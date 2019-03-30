@@ -32,11 +32,38 @@
         span.b {
             display: inline-block;
             font-family: 'Courier New', Courier, monospace;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             font-size: 25px;
+            color: black;
+            border: 1px solid black;
+            border-color: black;
+        }
+        span.c {
+            display: inline;
+            color: black;
+            border: 1px solid black;
+        }
+
+        span.d {
+            display: inline;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: black;
+            border: 1px solid black;
+            border-color: black;
+        }
+
+        span.e {
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             color: black;
             border: 1px solid black;
             border-color: black;
@@ -63,13 +90,14 @@
                 or emphasize certain words, give it a different appearance from the content before and after 
                 it. Using <span class="a">display: inline</span> allows you to make it bold, apply a 
                 different colour, change the font, and so on.</p>
+                <p>However, if you set padding and margin using this property, they will be ignored.</p>
             </div>
             <div class="Header">
                 <p>What is <span class="a">display: inline-block</span>?</p>
             </div>
             <div class="Content">
                 <p><span class="a">display: inline-block</span> is a declaration in css which allows different 
-                display properties to be assigned to content "inline" INCLUDING SETTING THE MARGIN AND 
+                display properties to be assigned to content on the same line INCLUDING SETTING THE MARGIN AND 
                 PADDING. For example, you may want to not only bold or emphasize certain words, but you want
                 the space it takes up on a page to be different from the content before or after it. 
                 Using <span class="b">display: inline-block</span> gives you the additional choice of how
@@ -81,13 +109,36 @@
                 horizontally.</p>
             </div>
             <div class="Header">
+              <p>Here are some examples:</p>
+          </div>
+          <div class="Content">
+              <p>This is what happens when you use <span class="a">display: inline</span>:</p>
+              <p>normal</p>
+              <p><span class="c">normal but with display inline no change in margins or padding</span> and </p>
+
+              <p><span class="d">normal but with display inline margin and padding change</span></p>
+              
+              <p>Though the appearance change has been honoured, the padding and margin settings have been ignored, 
+                and the content now encroaches on the lines above and below.
+              </p>
+              <p>This is what happens when you use <span class="a">display: inline-block</span>:</p>
+              <p>normal</p>
+              <p><span class="c">normal but with display inline no change in margins or padding</span> and </p>
+
+              <p><span class="e">normal but with display inline margin and padding change</span></p>
+              
+              <p>The appearance, padding and margin settings are honoured, so the content now has enough space to 
+                not encroach on the lines above and below. The changes are more pronounced when the size of the 
+                screen is changed, particularly a smaller screen such as on a tablet or phone.</p>
+          </div>
+            <div class="Header">
                 <p>Why not use <span class="a">display: block</span>?</p>
             </div>
             <div class="Content">
                 <p><span class="a">display:block</span> would not allow the item to which it is applied to be 
                 inline with the content before and after it. It will add a line between items so they will sit 
                 vertically and can't sit side by side, horizontally, and is one of the reasons that <span class="a">display: block</span>
-                is not used for lists that need to appear to be on the same line.</p>
+                is not used for lists that need to appear to be on the same line, like headings, for example.</p>
             </div>
           </div>
         </div>

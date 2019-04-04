@@ -1,5 +1,5 @@
 *{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Julee', cursive;
     color: whitesmoke;
 }
 
@@ -33,5 +33,6 @@
 .home {
     font-size: 10px;
     text-align: center;
+    color: whitesmoke;
     text-shadow: #0000CD 2px 0 5px;
 }

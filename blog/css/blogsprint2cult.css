@@ -4,9 +4,8 @@
 }
 
 .title {
-    margin-top: 100px;
+    margin-top: 50px;
     padding-top: 35px;
-    padding-bottom: 35px;
     padding-right: 20px;
     font-size: 30px;
     text-align: center;
@@ -20,7 +19,6 @@
     font-size: 30px;
     text-align: center;
     text-shadow: #0000CD 2px 0 10px;
-
 }
 
 .content {
@@ -30,6 +28,10 @@
     font-size: 20px;
     text-align: left;
     text-shadow: #0000CD 2px 0 10px;
-
 }
 
+.home {
+    font-size: 10px;
+    text-align: center;
+    text-shadow: #0000CD 2px 0 5px;
+}

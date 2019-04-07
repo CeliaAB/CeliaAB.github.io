@@ -1,0 +1,38 @@
+*{
+    font-family: 'Julee', cursive;
+    color: whitesmoke;
+}
+
+.title {
+    margin-top: 100px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 20px;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: #0000CD 2px 0 10px;
+}
+
+.header {
+    margin-left: 40px;
+    margin-right: 30px;
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: left;
+    text-shadow: #0000CD 2px 0 10px;
+}
+
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 5px;
+    font-size: 15px;
+    text-align: left;
+    text-shadow: #0000CD 2px 0 10px;
+}
+
+.home {
+    font-size: 10px;
+    text-align: center;
+    text-shadow: #0000CD 2px 0 5px;
+}

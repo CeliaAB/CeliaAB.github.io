@@ -100,30 +100,41 @@
                 live code.</p>
           </div>
           <div class="header">
-                <h3>Getting Data from Arrays versus Objects</h3>
+                <h3>Are There Differences in Getting Data from Arrays versus Objects?</h3>
             </div>
           <div class="content">
                 <p>(This relates to JS only). An array is a grouping of similar elements using a single variable. For example,
-                different makes of cars may be grouped by the variable <i>cars</i>.</p>
-                <p>In JS, almost everything is an object - an entity with properties that define their characteristics, like number
-                of wheels or the colour for the cars example. (An array is an object in JS but is normally referred to as an array.)</p>
-                <p>To get data from an array, you need to tell the processor which array the data you need sits in (the variable 
-                name of the array), and where or what in the array you need. You can specify the index where the data sits, like cars[0] 
-                will give you the first car make (index starts at 0) for example, or you can specify the data you need and search the 
-                array for it, like cars("Ford").</p>
-                <p>Data in objects can have multiple properties.  To get the data you need, you can look for the property(ies), such 
-                as carsObject("colour") = "red" will give all the red cars (if colour is one of the properties specified in the object).   
-          </div>
+                different makes of cars may be grouped by the variable <i>cars</i>. Arrays can have numbers or strings.</p>
+                <p>In JS, almost everything is an object - an entity with a collection of properties that define their characteristics, 
+                like the number of wheels or the colour for the cars example. (An array is an object in JS but is normally referred to 
+                as an array.) Data in objects can have multiple properties.</p>
+                <p>There 2 ways to get data from objects (and arrays). These are dot "." or bracket "[]".</p>
+                <p>Other than it being simpler, the dot is used when you can specify the name of the object and the property you are
+                looking for, as in objectName.propertyName. It has a number of limitations in that the property name (or "identifier") 
+                must be alphanumeric but can include "_" or "$", cannot start with a number, and cannot contain variables.</p>
+                <p>The second method, brackets, is used when the property name or identifier contains data that won't work with dot 
+                method, such as if there are spaces or other special characters in the property identifier other than "_" or "$", or 
+                if its a variable. It takes the form objectName["propertyName"].</p>
+                <p>Because arrays are sequentially indexed sets of data, there is another way of accessing data from arrays.</p>
+                Each item in an array has a corresponding index of where it sits in the array. The first item in an array has an index 
+                of 0, and the last item has an index of the total number of items in the array, less one.  So using brackets because 
+                the identifier starts with a number, you can actually get the data you need by calling on the item in its particular 
+                sequence in the array. If the cars array has ("Ford", "Chevrolet", "Lexus"), asking for cars[0] in an operation will 
+                get Ford as the answer. (The index starts at 0 because it uses offsets to identify where the data sits. The first data 
+                element has no offset, so it starts at 0). However, this still sits within the parameters for brackets to be used to 
+                access data.</p>
+                </div>
           <div class="header">
                 <h3>Functions and Why they are Useful</h3>
             </div>
             <div class="content">
                 <p>A function in JS is a procedure that performs a task, such as look for something, compares something, performs
-                a calculation on something. They are not only useful, but necessary. So much is performed by the front end nowadays
-                including data validation and other tasks. If required information is vetted at the time of input, backend proceses 
-                will have better data to enable error rates to drop. For example, if there are set dates that an event has to occur
-                a function can be used to test whether an date input fits within these limits. To leave this further down in the 
-                process may mean additional work.</p>
+                a calculation on something. Without functions there is no way of interacting with the data. As such, they are 
+                necessary.  Also, so much is performed by the front-end including data validation, selection of different options 
+                etc. If required information is vetted at the time of input, backend processes will have better data for processing, 
+                enabling error rates to drop. For example, if there are set dates that an event has to occur, a function can be used 
+                to test whether an date input fits within these limits. To leave this further down in the process will mean additional 
+                intervention or validation.</p>
                 <p></p>
             </div>
           </div>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CABTechBlog</title>
+    <link href="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/blogsprint3tech.css">
+    <style>
+        <!-- #Central {
+        background: url(Images/Hobbiton.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        } -->
+
+        #Whole {
+        background-image: url(Images/grass.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+        } 
+
+    </style>
+    
+  </head>
+    <body>
+      <div class="=container">
+      <div id=Whole>
+          <div class="title">
+              <h1>Sprint 3 Technical Blog</h1>
+              <h2>HTML, CSS and JS - The Triumvirate in Web Development!!</h2>
+          </div>
+          <div class="home">
+              <p><a href="https://celiaab.github.io/">Home</a></p>
+          </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="header">
+                <h3>What is HTML vs CSS?</h3>
+            </div>
+            <div class="content">
+                <p>HTML stands for <u>H</u>yper<u>t</u>ext <u>M</u>arkup <u>L</u>anguage. It is a 
+                convention used in digital publication and is not limited to browsers as printing systems
+                also use it. The convention specifies how content is structured and the rules surrounding 
+                any supplementary information that may be needed in order for the page to work, such as links
+                and references.</p>
+                <p>CSS stands for <u>C</u>ascading <u>S</u>tyle <u>S</u>heets. It is a set of styling instructions 
+                which drive how digital output looks. New styles and parameters are being developed constantly. It
+                is used to tell the operating system how the content should look on a page, including any animation
+                and other behavior needed, such as changing colour or format when someone hovers over buttons etc.</p>
+                <p>One way to look at their differences can be likened to the world of high-end cake decorating!! 
+                So, in baking a cake, a bunch of ingredients go into it, gets mixed up in a certain sequence, baked, 
+                and out comes a cake. It is limited by the shape of the baking container, the inherent constraints
+                of the right temperature, and time. You can add decorations to it, glace or ice it, but it
+                is essentially what comes out of the oven. There's only so much that can be done to it. However,
+                 its why we buy cakes to eat. The content. That's HTML.</p>
+                <p>In the work of high-end cake decorating, the magicians are the cake decorators. They take the 
+                baked product, then cut, stack, shape, join, mold, wrap and colour it. They add embellishments, put 
+                it in fantastic packaging including mobiles, and transform the humble cake into a work of art, 
+                visually appealing as well as hopefully being still edible. That's CSS.</p>
+                <p>In that world, as well as the digital world, there are instances where the style is what is being
+                consumed. There are web sites that only has style content and people visit them. However, generally 
+                people want content - they want cake.</p>
+            </div>
+            <div class="header">
+                <h3>Control Flows and Loops</h3>
+            </div>
+            <div class="content">
+                <p>Web pages are used for many reasons, to facilitate information sharing and the collection of
+                information; to enable financial transactions in ecommerce; to validate inputs such as testing and so 
+                on. The input and output of information sometimes require it to be processed in a specific way, like
+                filling a shopping cart online then paying for it; or getting dates to enable a travel booking.</p>
+                <p>A human being uses logic and reasoning to do these types of tasks. For example, to wash a car You
+                may need to fill a bucket, get the tools then wash the car. He/she can tell if the bucket is full. A 
+                machine needs to be programmed to determine if a set of criteria has been met for it to execute the next
+                step. If bucket = full AND tools = ready THEN ready to wash car. This sequencing is a control flow.</p>
+                <p>Control flows is the way machines are told how to operate. If "a" happened, only then can the next 
+                step "b" be taken. So in ecommerce, an example may be that until payment is received, items 
+                in someone's shopping cart cannot be pushed to the picking process.</p>
+                <p>A loop is a repeat of a step until everything that needs that step has been done. An example of this 
+                is washing dishes manually. You have to repeat the washing effort for all the dirty items until everything
+                has been washed. In the machine world, using the shopping example above, once someone has paid, the items
+                must be moved from the shopping basket to the "paid" section of the webpage, as well as the back office 
+                functions of the picking queues until there are no more items left in the shopping basket. The 
+                process is repeated in a loop until the finish condition has been met.</p>    
+            </div>
+            <div class="header">
+                <h3>What is the DOM? (Beethoven's 5th Symphony playing in the background...)</h3>
+            </div>
+          <div class="content">
+                <p>The <u>D</u>ocument <u>O</u>bject <u>M</u>odule is an interface provided by browser vendors so that people
+                can see all the information related to how a website works using a highly structured view. The representation is 
+                called a tree because it has a tree-like structure, albeit an upside down tree, with every item or element on a website 
+                being a node that may have parents or children depending on where it sits in that tree structure.</p>
+                <p>Because it is an interface showing a built webpage, its a good tool for developers to use to immediately
+                see modifications made to a page. Changes are made to the DOM but the live page is not impacted by these changes.
+                They only work on that person's device. You can test different scenarios by running the changes through and 
+                see right away if things behave as they should after the change. Adjustments can be made then saved to the 
+                live code.</p>
+          </div>
+          <div class="header">
+                <h3>Are There Differences in Getting Data from Arrays versus Objects?</h3>
+            </div>
+          <div class="content">
+                <p>(This relates to JS only). An array is a grouping of similar elements using a single variable. For example,
+                different makes of cars may be grouped by the variable <i>cars</i>. Arrays can have numbers or strings.</p>
+                <p>In JS, almost everything is an object - an entity with a collection of properties that define their characteristics, 
+                like the number of wheels or the colour for the cars example. (An array is an object in JS but is normally referred to 
+                as an array.) Data in objects can have multiple properties.</p>
+                <p>There 2 ways to get data from objects (and arrays). These are dot "." or bracket "[]".</p>
+                <p>Other than it being simpler, the dot is used when you can specify the name of the object and the property you are
+                looking for, as in objectName.propertyName. It has a number of limitations in that the property name (or "identifier") 
+                must be alphanumeric but can include "_" or "$", cannot start with a number, and cannot contain variables.</p>
+                <p>The second method, brackets, is used when the property name or identifier contains data that won't work with dot 
+                method, such as if there are spaces or other special characters in the property identifier other than "_" or "$", or 
+                if its a variable. It takes the form objectName["propertyName"].</p>
+                <p>Because arrays are sequentially indexed sets of data, there is another way of accessing data from arrays.</p>
+                Each item in an array has a corresponding index of where it sits in the array. The first item in an array has an index 
+                of 0, and the last item has an index of the total number of items in the array, less one.  So using brackets because 
+                the identifier starts with a number, you can actually get the data you need by calling on the item in its particular 
+                sequence in the array. If the cars array has ("Ford", "Chevrolet", "Lexus"), asking for cars[0] in an operation will 
+                get Ford as the answer. (The index starts at 0 because it uses offsets to identify where the data sits. The first data 
+                element has no offset, so it starts at 0). However, this still sits within the parameters for brackets to be used to 
+                access data.</p>
+                </div>
+          <div class="header">
+                <h3>Functions and Why they are Useful</h3>
+            </div>
+            <div class="content">
+                <p>A function in JS is a procedure that performs a task, such as look for something, compares something, performs
+                a calculation on something. Without functions there is no way of interacting with the data. As such, they are 
+                necessary.  Also, so much is performed by the front-end including data validation, selection of different options 
+                etc. If required information is vetted at the time of input, backend processes will have better data for processing, 
+                enabling error rates to drop. For example, if there are set dates that an event has to occur, a function can be used 
+                to test whether an date input fits within these limits. To leave this further down in the process will mean additional 
+                intervention or validation.</p>
+                <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

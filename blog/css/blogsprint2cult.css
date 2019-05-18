@@ -4,8 +4,8 @@
 }
 
 .title {
-    margin-top: 50px;
-    padding-top: 35px;
+    margin-top: 30px;
+    padding-top: 25px;
     padding-right: 20px;
     font-size: 25px;
     text-align: center;
@@ -17,7 +17,7 @@
     margin-right: 30px;
     padding-top: 20px;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     text-shadow: #0000CD 2px 0 10px;
 }
 
